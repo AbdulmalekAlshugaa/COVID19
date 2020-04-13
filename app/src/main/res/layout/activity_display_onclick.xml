@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DisplayOnclick">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/CountryName"
+                    android:text="@string/usa"
+                    android:fontFamily="@font/googlesans_bold"/>
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="60"
+                                android:textSize="20sp"
+                                android:lines="1"
+                                android:text="@string/total"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/TotalCases"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33"
+                                android:textSize="20sp"
+                                android:lines="1"
+                                android:text="109987"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/paymentContiner"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:text="@string/recovered"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:text="@string/deaths"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/TotalRecovired"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:textSize="20sp"
+                                android:lines="1"
+                                android:text="@string/_0000"
+                                android:textColor="@color/green"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+                            <TextView
+                                android:id="@+id/TotalDeaths"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:textSize="20sp"
+                                android:lines="1"
+                                android:text="@string/_0000"
+                                android:textColor="@color/red"
+                                android:textStyle="bold"
+                                android:padding="10dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="2"
+                    android:columnCount="2"
+                    android:layout_margin="5dp"
+                    android:alignmentMode="alignMargins"
+                    android:layout_gravity="center_horizontal"
+                    android:columnOrderPreserved="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                android:layout_weight="50"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="5dp"
+                                app:cardBackgroundColor="@color/NewCases"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/new_cases"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_23"
+                                        android:id="@+id/NewCSE"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="35sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                android:layout_weight="50"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="5dp"
+                                app:cardBackgroundColor="@color/NewCasesDwth"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/new_death"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:id="@+id/NewDeath"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_35"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="35sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                app:cardCornerRadius="12dp"
+                                android:layout_weight="50"
+                                app:cardElevation="5dp"
+                                app:cardBackgroundColor="@color/Critical"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/critical"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:id="@+id/Critical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_4567"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="35sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="170dp"
+                                android:layout_height="170dp"
+                                app:cardCornerRadius="12dp"
+                                android:layout_weight="50"
+                                app:cardElevation="5dp"
+                                app:cardBackgroundColor="@color/Active"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/active"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:id="@+id/Active"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_32345"
+                                        android:fontFamily="@font/googlesans_bold"
+                                        android:textSize="35sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginTop="20dp"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:id="@+id/SaveOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="@string/share_result"
+            android:textSize="15sp"
+            android:background="@color/green"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

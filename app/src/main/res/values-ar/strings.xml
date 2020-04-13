@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"كوفيد-19 "</string>
+    <string name="medical">Medical</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="covid_19_world_statistics">الإحصائيات العالمية كورونا</string>
+    <string name="worldwide">حول العالم</string>
+    <string name="confirmed">مجموع الإصابات</string>
+    <string name="recovered">حالات الشفاء</string>
+    <string name="deaths">مجموع الوفيات</string>
+    <string name="_00000">۰۰۰۰۰</string>
+    <string name="_0000">۰۰۰۰</string>
+    <string name="preventive_healthcare">طرق الوقاية</string>
+    <string name="symptoms">الاعراض</string>
+    <string name="news">اخبار</string>
+    <string name="suggestion">اقتراحات</string>
+    <string name="calculate_bmi">حساب  كتلة الجسم</string>
+    <string name="CName">اسم الدوله</string>
+
+    <string name="new_cases">حالات جديده</string>
+    <string name="_23">23</string>
+    <string name="usa">USA</string>
+    <string name="share_result">مشاركة</string>
+    <string name="total">مجموع الإصابات</string>
+    <string name="new_death">وفيات جديده</string>
+    <string name="_35">35</string>
+    <string name="critical">حالات حرجه</string>
+    <string name="_4567">4567</string>
+    <string name="active">حالات نشطه</string>
+    <string name="_32345">32345</string>
+
+    <string name="bmi_calculator">حساب  كتلة الجسم</string>
+    <string name="female">انثى</string>
+    <string name="male">ذكر</string>
+    <string name="calculate">احسب</string>
+    <string name="t">المجموع :</string>
+    <string name="reset">إعادة تعيين </string>
+    <string name="age">العمر</string>
+    <string name="yers">سنين</string>
+    <string name="weight">الوزن</string>
+    <string name="kg">كيلوجرام</string>
+    <string name="height">الطول</string>
+    <string name="cm">سينتيمتر</string>
+    <string name="yemen">اليمن</string>
+</resources>
