@@ -28,6 +28,7 @@ import java.util.List;
 public class worldwidestaris extends AppCompatActivity implements ViewData {
     private API_Imp api_imp;
     private static final String TAG = "worldwidestaris";
+    int TotalCases;
 
     private ArrayList<ListModel> mTrackingTrip = new ArrayList<>(); // mNote
     private AdpaterClass mListCurrentDateAdapter; // Adapter
@@ -108,20 +109,24 @@ public class worldwidestaris extends AppCompatActivity implements ViewData {
     public void OnSuccess(ApiResponds OnSuccess) {
         for (int i=0; i<OnSuccess.getResponse().size(); i++){
             ListModel listModel = new ListModel();
+
             listModel.setCName(OnSuccess.getResponse().get(i).getCountry());
             listModel.setConfiremed(OnSuccess.getResponse().get(i).getCases().getTotal().toString());
             listModel.setRecovery(OnSuccess.getResponse().get(i).getCases().getRecovered().toString());
-            listModel.setDeath(OnSuccess.getResponse().get(i).getDeaths().getTotal().toString());
+            listModel.setDeath(OnSuccess.getResponse().get(i).getCases().getRecovered().toString());
             listModel.setNewCases(OnSuccess.getResponse().get(i).getCases().getNew());
             listModel.setNewDeathCases(OnSuccess.getResponse().get(i).getDeaths().getNew());
             listModel.setNewActive(OnSuccess.getResponse().get(i).getCases().getActive().toString());
             listModel.setNewCritical(OnSuccess.getResponse().get(i).getCases().getCritical().toString());
             listModel.setTotal(OnSuccess.getResponse().get(i).getCases().getTotal().toString());
 
+
+
             mTrackingTrip.add(listModel);
         }
         mListCurrentDateAdapter.notifyDataSetChanged();
         mProgressBar.setVisibility(View.INVISIBLE);
+
         
     }
 

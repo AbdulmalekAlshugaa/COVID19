@@ -11,7 +11,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroiftIMP {
-    private static final String BASE_URL = "https://thevirustracker.com/";
+    //private static final String BASE_URL = "https://thevirustracker.com/";
+    private static final String BASE_URL = "https://corona-virus-stats.herokuapp.com/api/v1/";
     private static RetroiftIMP minstance;
     private Retrofit retrofit;
     private Context context;

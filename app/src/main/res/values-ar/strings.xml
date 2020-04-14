@@ -42,4 +42,8 @@
     <string name="height">الطول</string>
     <string name="cm">سينتيمتر</string>
     <string name="yemen">اليمن</string>
+
+    <string name="bmi_result"> كتلة الجسم</string>
+    <string name="covid19">كوفيد-19</string>
+    <string name="get_the_latest_update_of_the_covid19"> آخر مستجدات كورونا لحظة بلحظة</string>
 </resources>

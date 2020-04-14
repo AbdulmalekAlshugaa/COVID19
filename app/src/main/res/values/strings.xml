@@ -40,4 +40,10 @@
     <string name="cm">Cm</string>
     <string name="yemen">Yemen</string>
     <string name="bmi_result">BMI Result</string>
+    <string name="covid19">COVID19</string>
+    <string name="get_the_latest_update_of_the_covid19">Get the latest update of the COVID19 .</string>
+    <string name="feedback">Feedback</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_address_optional">Email Address (Optional)</string>
+    <string name="type_here">Type Here</string>
 </resources>

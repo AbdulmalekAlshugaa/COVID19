@@ -50,5 +50,11 @@ dependencies {
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.10'
     annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //    Add Dependencies!!
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 }

@@ -3,6 +3,10 @@ package com.example.covid19.mainRequest;
 import android.app.Activity;
 import android.util.Log;
 
+import com.example.covid19.AlternativeAPI.AlterNativeAPI;
+import com.example.covid19.AlternativeAPI.Data;
+import com.example.covid19.ThirdAPI.Third;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +23,7 @@ public class CovidImp implements Presenter, OnView {
     }
 
     @Override
-    public void onSuccess(List SuccessMessage) {
+    public void onSuccess(Third SuccessMessage) {
         onView.onSuccess(SuccessMessage);
 
     }
@@ -32,25 +36,68 @@ public class CovidImp implements Presenter, OnView {
 
     @Override
     public void onSucessData() {
-        RetroiftIMP.getInstance("https://thevirustracker.com/")
+        RetroiftIMP.getInstance("https://corona.lmao.ninja/")
                 .getWorldWideApi()
-                .getWorldData()
-                .enqueue(new Callback<Stats>() {
-            @Override
-            public void onResponse(Call<Stats> call, Response<Stats> response) {
-                if (response.isSuccessful()){
-                    onView.onSuccess(response.body().getResults());
-                }else {
-                    onView.onError(response.message());
-                }
-            }
+                .ThirdAPI()
+                .enqueue(new Callback<Third>() {
+                    @Override
+                    public void onResponse(Call<Third> call, Response<Third> response) {
+                        if (response.isSuccessful()){
+                           // Third third = (Third) response.body();
+                            onView.onSuccess(response.body());
+                            Log.d(TAG, "onResponse: "+response.code());
+                        }else {
+                            onView.onError(response.message());
+                            Log.d(TAG, "onResponse Error : "+response.message());
+                        }
+                    }
 
-            @Override
-            public void onFailure(Call<Stats> call, Throwable t) {
-                Log.d(TAG, "onFailure: "+t.getMessage().toString());
+                    @Override
+                    public void onFailure(Call<Third> call, Throwable t) {
+                        onView.onError(t.getMessage().toString());
+                        Log.d(TAG, "onFailure: "+t.getMessage().toString());
 
-            }
-        });
+                    }
+                });
+
+//                .getWorldDataAlterNative().enqueue(new Callback<AlterNativeAPI>() {
+//            @Override
+//            public void onResponse(Call<AlterNativeAPI> call, Response<AlterNativeAPI> response) {
+//                if (response.isSuccessful()){
+//                    onView.onSuccess(response.body().getData());
+//                    Log.d(TAG, "onResponse: "+response.code());
+//                }else {
+//                    onView.onError(response.message());
+//                    Log.d(TAG, "onResponse Error : "+response.message());
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<AlterNativeAPI> call, Throwable t) {
+//                onView.onError(t.getMessage().toString());
+//                Log.d(TAG, "onFailure: "+t.getMessage().toString());
+//            }
+//        });
+//                .getWorldData()
+//                .enqueue(new Callback<Stats>() {
+//            @Override
+//            public void onResponse(Call<Stats> call, Response<Stats> response) {
+//                if (response.isSuccessful()){
+//                    onView.onSuccess(response.body().getResults());
+//                    Log.d(TAG, "onResponse: "+response.code());
+//                }else {
+//                    onView.onError(response.message());
+//                    Log.d(TAG, "onResponse Error : "+response.message());
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<Stats> call, Throwable t) {
+//                onView.onError(t.getMessage().toString());
+//                Log.d(TAG, "onFailure: "+t.getMessage().toString());
+//
+//            }
+//        });
 
     }
 }

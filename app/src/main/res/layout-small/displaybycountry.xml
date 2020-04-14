@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/gray"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yemen"
+                    android:id="@+id/Country"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:id="@+id/paymentContiner"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:text="@string/confirmed"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:text="@string/recovered"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:text="@string/deaths"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/TotalConfirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="20sp"
+                    android:lines="1"
+                    android:text="@string/_00000"
+                    android:textColor="@color/Blue"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:id="@+id/TotalRecovired"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="20sp"
+                    android:lines="1"
+                    android:text="@string/_0000"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:id="@+id/TotalDeaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:textSize="20sp"
+                    android:lines="1"
+                    android:text="@string/_0000"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
