@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.covid19">
+    package="com.COVID19Tracker.covid19">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -29,17 +29,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Feedback"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".News" />
-        <activity android:name=".sym" />
-        <activity android:name=".Payment" />
-        <activity android:name=".Suggestion" />
-        <activity android:name=".Testing" />
-        <activity android:name=".BMI" />
-        <activity android:name=".DisplayOnclick" />
-        <activity android:name=".worldwidestaris" />
-        <activity android:name=".SaplahScreen">
+        <activity android:name="com.COVID19Tracker.covid19.Feedback"/>
+        <activity android:name="com.COVID19Tracker.covid19.MainActivity" />
+        <activity android:name="com.COVID19Tracker.covid19.News" />
+        <activity android:name="com.COVID19Tracker.covid19.sym" />
+        <activity android:name="com.COVID19Tracker.covid19.Payment" />
+        <activity android:name="com.COVID19Tracker.covid19.Suggestion" />
+        <activity android:name="com.COVID19Tracker.covid19.Testing" />
+        <activity android:name="com.COVID19Tracker.covid19.BMI" />
+        <activity android:name="com.COVID19Tracker.covid19.DisplayOnclick" />
+        <activity android:name="com.COVID19Tracker.covid19.worldwidestaris" />
+        <activity android:name="com.COVID19Tracker.covid19.SaplahScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

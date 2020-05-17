@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:651719384149:android:d54a5769f4b26cd93b48dc",
+        "android_client_info": {
+          "package_name": "com.COVID19Tracker.covid19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651719384149-b0l9vuhnebebnc00eq5hqp6d6ik4ionj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.COVID19Tracker.covid19",
+            "certificate_hash": "0b04e728c55bd5e9fdc98cb7f67a411aab4e8aa5"
+          }
+        },
+        {
+          "client_id": "651719384149-oemul3hkq3at7dlqd4qlr1ov0qbgntfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCoq-allM5Y4V27W1LRLw4Ty7ob_pXccU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651719384149-oemul3hkq3at7dlqd4qlr1ov0qbgntfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:651719384149:android:9282afc4694fb2b83b48dc",
         "android_client_info": {
           "package_name": "com.example.covid19"
